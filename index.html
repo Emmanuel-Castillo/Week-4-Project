@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie DB</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://kit.fontawesome.com/8aeb852ff1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section id="landing">
+    <nav>
+      <figure>
+        <img src="./assets/logo.png" alt="" id="nav__logo--img">
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link">
+          <a href="" class="nav__link--anchor">Home</a>
+        </li>
+        <li class="nav__link">
+          <a href="" class="nav__link--anchor">Find your Movie</a>
+        </li>
+        <li class="nav__link">
+          <a href="" class="nav__link--anchor">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1 class="header__title">Browse our Movies!</h1>
+      <form action="" class="input__wrapper" onsubmit="searchMovies(event)">
+        <input type="text" class="search__input" placeholder="Enter keyword or name">
+        </input>
+        <button class="search__input--wrapper">
+          <i class="fa-solid fa-magnifying-glass cursor"></i>
+        </button>
+      </form>
+    </header>
+
+  </section>
+
+  <section id="content">
+    <div class="container">
+      <div class="row">
+        <div class="content__header">
+          <h2 class="header__title">Results: </h2>
+          <select class="filter__anime" id="filter" onchange="filterMovie(event)">
+            <option value disabled selected>Sort by..</option>
+            <option value="Old to New">Old to New</option>
+            <option value="New to Old">New to Old</option>
+          </select>
+        </div>
+        <div class="movie__list">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="footer__content">
+        <img src="./assets/logo.png" alt="" id="footer__logo--img">
+        <ul class="footer__links">
+          <li class="footer__link">
+            <a href="" class="footer__link--anchor">Home</a>
+          </li>
+          <li class="footer__link">
+            <a href="" class="footer__link--anchor">Find your Movie</a>
+          </li>
+          <li class="footer__link">
+            <a href="" class="footer__link--anchor">Contact</a>
+          </li>
+        </ul>
+        <p class="copyright">Copyright &copy; 2023 Emmanuel Castillo</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="app.js"></script>
+
+</html>
