@@ -29,12 +29,15 @@ async function searchMovies(event) {
 
     movieListEl.classList.remove("movies__loading");
     movieList = moviesData.Search;
+    console.log(movieList)
 
     //if no movies were found (if movieList is empty or falsy)
     if(!movieList){
       movieListEl.innerHTML = `<p class="no__movies">No movies found...</p>`
       return
     }
+
+    
 
     //else, call filter function with no filter argument to set movieListEl.innerHTML
     movieListFilter(null);

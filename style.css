@@ -37,6 +37,7 @@ a {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 8px;
 }
 
 button {
@@ -101,14 +102,22 @@ header {
   width: 50%;
   max-width: 320px;
   position: relative;
+  border: 2px solid #242424;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.input__wrapper:hover {
+  border-color: darkgoldenrod;
 }
 
 .search__input {
-  border: 2px solid darkgoldenrod;
-  border-radius: 8px;
+  border: none;
   width: 100%;
   padding: 8px 16px;
   font-size: 16px;
+
 }
 
 .search__input--wrapper {
@@ -144,10 +153,17 @@ footer {
   justify-content: space-between;
 }
 
-.filter__anime {
+.filter__movie {
   width: 100%;
-  max-width: 160px;
+  max-width: 200px;
   padding: 8px 16px;
+  border: 2px solid black;
+  border-radius: 8px;
+  transition: all 300ms ease;
+}
+
+.filter__movie:hover {
+  border-color: darkgoldenrod;
 }
 
 .movie__list {
