@@ -21,7 +21,7 @@ async function searchMovies(event) {
 
     //fetch api promise
     const movies = await fetch(
-      `http://www.omdbapi.com/?i=tt3896198&apikey=49913df9&s=${search}`
+      `http://www.omdbapi.com/?apikey=49913df9&s=${search}`
     );
 
     //grab json data
