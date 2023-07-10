@@ -91,6 +91,7 @@ header {
 }
 
 .header__title {
+  text-align: center;
   font-size: 48px;
   padding: 8px 16px;
   margin-bottom: 8px;
@@ -99,8 +100,9 @@ header {
 }
 
 .input__wrapper {
-  width: 50%;
+  width: 100%;
   max-width: 320px;
+  background-color: white;
   position: relative;
   border: 2px solid #242424;
   border-radius: 8px;
@@ -114,7 +116,8 @@ header {
 
 .search__input {
   border: none;
-  width: 100%;
+  outline: none;
+  width: 85%;
   padding: 8px 16px;
   font-size: 16px;
 
@@ -302,12 +305,16 @@ footer {
   width: 100%;
 }
 
+.copyright {
+  text-align: center;
+}
+
 /* SMALL PHONE TABLETS AND LARGE SMARTPHONES  */
 @media (max-width: 768px) {
 
   #nav__logo--img,
   #footer__logo--img {
-    width: 80px;
+    width: 90px;
   }
 
   .nav__link--anchor {
@@ -334,17 +341,33 @@ footer {
 
 /* Very small screens */
 @media(max-width: 550px) {
-  .movie {
-    width: 60%;
+
+  nav {
+    flex-direction: column;
+    margin-bottom: 32px;
   }
 
-  .nav__link--anchor {
-    font-size: 12px;
+  .nav__link--list{
+    flex-direction: column;
+  }
+
+  .nav__link {
+    margin: 4px 0;
+    text-align: center;
+  }
+
+  .movie {
+    width: 100%;
+    max-width: 320px;
   }
 
   .header__title {
     font-size: 32px;
     -webkit-text-stroke-width: .5px;
+  }
+
+  .content__header {
+    flex-direction: column;
   }
 
   .footer__link--anchor {

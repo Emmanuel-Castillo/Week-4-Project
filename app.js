@@ -19,7 +19,7 @@ async function searchMovies(event) {
     //search is now new search
     search = possibleNewSearch;
 
-    //fetch api promise
+    //fetch api promise: api website revised 7/10/2023
     const movies = await fetch(
       `https://www.omdbapi.com/?apikey=49913df9&s=${search}`
     );
